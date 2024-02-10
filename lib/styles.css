@@ -1,8 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap');
+
 :root {
-    --textColor: #222541;
+    --primaryColor: #222541;
     --gradientPart1: #FE6B3B;
     --gradientPart2: #FF5279;
-    --cardBackgroundColor: #FFFFFF;
+    --white: #FFFFFF;
     --rootBackgroundColor: #36384D;
 }
 
+body {
+    color: var(--primaryColor);
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--rootBackgroundColor);
+    justify-items: center;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.newsletter {
+    position: absolute;
+    top: 20%;
+
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    width: 700px;
+    height: 470px;
+}
+
+img {
+    height: 410px;
+}
+
+li {
+    list-style-image: url(lib/assets/images/icon-list.svg);
+}
+
+/* left section */
+.left-section {
+    padding: 20px;
+}
+
+.heading {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.brief {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.button {
+    color: var(--white);
+    padding: 15px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    font-weight: 700;
+    margin: 5px 0;
+    width: 280px;
+}
+
+
+form input[type="email"] {
+    margin: 15px 0;
+    border: 0;
+    border: 1px solid #b4becb;
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 280px;
+}
+
+li {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: start;
+    list-style: none;
+
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("assets/images/icon-list.svg");
+    margin-right: 0.5rem;
+
+}
