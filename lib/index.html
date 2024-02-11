@@ -7,7 +7,7 @@
     <title>Newsletter Sign-Up</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,13 +22,20 @@
                 <li>And much more!</li>
             </ul>
             <Form>
-
-                <input type="email" name="email" placeholder="email@company.com">
+                <div class="email-flex">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="email@company.com">
+                </div>
                 <button class="button" type="submit">subscribe to monthly newsletter</button>
             </Form>
         </div>
         <div class="right-section">
-            <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+            <picture>
+                <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 720px)" />
+                <source srcset="assets/images/illustration-sign-up-mobile.svg" media="(max-width: 720px)" />
+                <img src="assets/images/illustration-sign-up-desktop.svg" alt="Illustration of sign up"
+                    sizes="(max-width: 720px) 100vw, 50vw" />
+            </picture>
         </div>
     </div>
     <script src="" async defer></script>
